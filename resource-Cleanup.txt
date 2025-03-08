@@ -1,0 +1,30 @@
+🧼 Resource cleanup
+🔸 CloudFront
+disabled (takes a lot of time)
+delete
+🔸 RDS
+RDS instance or read replica delete in both regions (takes a lot of time)
+snapshot
+🔸 Route 53
+Delete both private hosted zone (rds.com)
+Delete all three records in the public hosted zone (ankitjodhani.club)
+🔸 EC2
+Delete ASG in both regions
+Terminate Bastion host from us-east-1
+Delete ALB in both regions
+Delete TG from both regions
+Delete the Launch template from both regions
+Deregister AMIs which are created manually
+🔸 ACM
+Delete the certificate if you don't need it
+🔸 Backup services
+Delete resources from the backup vault in both regions
+Delete backup vault from N.virginia
+Delete Assign resources in the backup plan
+Delete backup plan
+🔸 VPC
+Delete NAT gateways from both regions (takes around 5 minutes)
+Release the Elastic IP
+Delete VPC in both regions (17 resources will be deleted on one click)
+🔸 WAF
+Remove Web ACLs from WAF
